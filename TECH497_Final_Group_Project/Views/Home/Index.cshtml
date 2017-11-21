@@ -1,0 +1,59 @@
+﻿@{
+    ViewBag.Title = "Home";
+}
+
+<div class="banner">
+    <img id="banner-image" src="~/Content/Images/hero_banner4.jpg" />
+</div>
+<div class="container body-content top-spacing section-spacing">
+    <h2 class="home-page-main-header">Our Services</h2>
+    <ul class="services-list fa-ul">
+        <li><i class="fa fa-cog" aria-hidden="true"></i>Builder for all classes in NHRA, IHRA, NMCA, NSCA, and SCCA</li>
+        <li><i class="fa fa-cog" aria-hidden="true"></i>"Door slammers is our specialty!"</li>
+        <li><i class="fa fa-cog" aria-hidden="true"></i>Pro Street to Pro Mod...We can do it all with great finishing touches!</li>
+        <li><i class="fa fa-cog" aria-hidden="true"></i>Everything you need from street to race cars and trucks</li>
+        <li><i class="fa fa-cog" aria-hidden="true"></i>Highest quality fabrication work</li>
+        <li><i class="fa fa-cog" aria-hidden="true"></i>Complete customizing to any car or truck</li>
+    </ul>
+</div>
+<div class="grey-background section-spacing">
+    <div class="container body-content">
+        <h2 class="home-page-main-header">Recent Projects</h2>
+        <h3 class="home-page-main-sub-header">This is a short description for our recent projects.</h3>
+        <div class="row row-centered">
+            <div class="recent-project-container">
+                <img src="~/Content/Images/2-huffman001.jpg" class="home-recent-project-img">
+                <h4 class="home-recent-project-title">Car Make and Model</h4>
+                <p class="home-recent-project-subtitle">Small subtitle for car</p>
+            </div>
+            <div class="recent-project-container">
+                <img src="~/Content/Images/shop_pictures_026.jpg" class="home-recent-project-img">
+                <h4 class="home-recent-project-title">Car Make and Model</h4>
+                <p class="home-recent-project-subtitle">Small subtitle for car</p>
+            </div>
+            <div class="recent-project-container-end">
+                <img src="~/Content/Images/MVC-023S.jpg" class="home-recent-project-img">
+                <h4 class="home-recent-project-title">Car Make and Model</h4>
+                <p class="home-recent-project-subtitle">Small subtitle for car</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="about-container">
+    <div class="container body-content">
+        <h3 class="about-title">About Us</h3>
+        <p class="about-txt">JP Race Cars, Inc. has been manufacturing top quality race cars and components since opening its doors in 1995. President Jerome Plunkett has been involved with drag racing since 1986 and continues to build race cars with total perfection one at a time.</p>
+        <button class="about-btn">Learn More</button>
+    </div>
+</div>
+<div class="container body-content top-spacing">
+    <h2 class="home-page-main-header">Explore our Projects</h2>
+    <h3 class="home-page-main-sub-header">Click one of the banners below to view the cars for that section.</h3>
+</div>
+<div class="section-image-container section-spacing">
+    <img class="section-image" src="~/Content/Images/street_rods_banner2.jpg"/>
+</div>
+
+@section Scripts {
+    @Styles.Render("~/Content/css")
+}

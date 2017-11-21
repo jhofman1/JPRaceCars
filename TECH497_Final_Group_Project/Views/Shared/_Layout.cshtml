@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="navbar navbar-default navbar-fixed-top">
+        <div class="top-bar">
+            <div class="container">
+                <ul>
+                    <li class="top-bar-item">
+                        <span class="fa fa-phone" aria-hidden="true"></span>
+                        <p class="top-bar-text">(517) 647-4995</p>
+                    </li>
+                    <li class="top-bar-item">
+                        <span class="fa fa-envelope" aria-hidden="true"></span>
+                        <a class="top-bar-text" href="mailto:info@jpracecars.com">info@jpracecars.com</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="">
+                    <img src="~/Content/Images/new_logo.jpg" class="logo-image">
+                    <span class="navbar-title">RACE CARS INC.</span>
+                </a>
+                @*@Html.ActionLink("RACE CARS INC.", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })*@
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Drag Racing", "DragRacing", "Home")</li>
+                    <li>@Html.ActionLink("Road Racing", "RoadRacing", "Home")</li>
+                    <li>@Html.ActionLink("Street Rods", "StreetRods", "Home")</li>
+                    <li>@Html.ActionLink("Off Road", "OffRoad", "Home")</li>
+                    <li>@Html.ActionLink("Other Projects", "OtherProjects", "Home")</li>
+                    <li>@Html.ActionLink("About", "About", "Home")</li>
+                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    @RenderBody()
+    <hr />
+    <footer>
+        <div class="container">
+            <p class="footer-txt">&copy; @DateTime.Now.Year - JP Race Cars Inc.</p>
+            <input class="sign-up-input-box" type="text" />
+            <button class="sign-up-btn">Sign Up</button>
+        </div>
+    </footer>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
