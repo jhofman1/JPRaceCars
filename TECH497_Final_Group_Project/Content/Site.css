@@ -29,6 +29,10 @@ textarea {
     padding-right: 15px;
 }
 
+.container {
+    position: relative;
+}
+
 .navbar-brand {
     color: black !important;
 }
@@ -187,7 +191,7 @@ a.top-bar-text:hover {
 }
 
 .top-spacing {
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 .grey-background {
@@ -437,7 +441,7 @@ i.fa.fa-cog {
 }
 
 .section-spacing {
-    padding-bottom: 70px;
+    padding-bottom: 60px;
 }
 
 footer {
@@ -449,20 +453,36 @@ footer {
 
 .footer-txt {
     margin: 0;
+    padding: 20px 0 20px 0;
     display: inline-block;
+}
+
+.sign-up-container {
+    position: absolute;
+    bottom: 0px;
+    right: 20px;
+}
+
+.sign-up-container a {
+    display: block;
+    margin: 0;
+    text-align: center;
+    padding-top: 5px;
+    text-decoration: none;
 }
 
 .sign-up-input-box {
     display: inline-block;
-    padding: 6px 5px;
+    padding: 4px 5px;
 }
 
 .sign-up-btn {
     display: inline-block;
     background-color: #fff;
     border: none;
-    font-size: 16px;
-    padding: 7px 25px;
+    font-size: 14px;
+    margin-left: 5px;
+    padding: 6px 20px;
     color: gray;
 }
 
@@ -505,6 +525,19 @@ footer {
 
     .home-page-main-sub-header {
         margin-bottom: 30px;
+    }
+
+    .sign-up-container {
+        position: relative;
+        right: 0;
+    }
+
+    .sign-up-container a {
+        text-align: left;
+    }
+
+    footer {
+        padding: 10px 0 30px 0;
     }
 }
 
@@ -586,10 +619,6 @@ footer {
 
     .nav {
         float: right;
-    }
-
-    .top-spacing {
-        margin-top: 20px;
     }
 
     .navbar-brand {

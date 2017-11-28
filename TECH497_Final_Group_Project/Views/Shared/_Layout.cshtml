@@ -52,12 +52,14 @@
         </div>
     </div>
     @RenderBody()
-    <hr />
     <footer>
         <div class="container">
             <p class="footer-txt">&copy; @DateTime.Now.Year - JP Race Cars Inc.</p>
-            <input class="sign-up-input-box" type="text" />
-            <button class="sign-up-btn">Sign Up</button>
+            <div class="sign-up-container">
+                <input class="sign-up-input-box" type="text" />
+                <button class="sign-up-btn">Sign Up</button>
+                @Html.ActionLink("Terms of Service", "TermsOfService", "Home")
+            </div>
         </div>
     </footer>
 
