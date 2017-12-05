@@ -20,7 +20,6 @@ namespace TECH497_Final_Group_Project.Database
     }
     public class Project
     {
-        public 
         public ImageDefinition MainImage { get; set; }
         public string Title { get; set; }
         public string Description { get;set; }
