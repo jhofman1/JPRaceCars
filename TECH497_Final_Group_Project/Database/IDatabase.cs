@@ -5,7 +5,7 @@ using System.Web;
 
 namespace TECH497_Final_Group_Project.Database
 {
-    enum Catagory
+    public enum Catagory
     {
         DragRacing,
         RoadRacing,
@@ -13,17 +13,17 @@ namespace TECH497_Final_Group_Project.Database
         Offroad,
         OtherProjects
     }
-    class ImageDefinition
+    public class ImageDefinition
     {
         public string AltText { get; set; }
         public string URL { get; set; }
     }
-    class Project
+    public class Project
     {
-        ImageDefinition MainImage { get; set; }
-        string Title { get; set; }
-        string Description { get;set; }
-        IEnumerable<ImageDefinition> images { get; set; }
+        public ImageDefinition MainImage { get; set; }
+        public string Title { get; set; }
+        public string Description { get;set; }
+        public IEnumerable<ImageDefinition> images { get; set; }
     }
     public interface IDatabase
     {
