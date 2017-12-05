@@ -7,11 +7,11 @@ namespace TECH497_Final_Group_Project.Database
 {
     public class SillyDatabase : IDatabase
     {
-        public Project GetImagesForProjects(Catagory catagory, int ID)
+        public Project GetProject(Catagory catagory, int ID)
         {
             return new Project {
                 Description = "This is a simple project you know basic stuff",
-                images = new List<ImageDefinition>
+                Images = new List<ImageDefinition>
                 {
                     new ImageDefinition
                     {
@@ -29,7 +29,7 @@ namespace TECH497_Final_Group_Project.Database
 
         public IEnumerable<Project> GetProjectsForCatagory(Catagory catagory)
         {
-            return new List<Project>{GetImagesForProjects(0, 0)};
+            return new List<Project>{GetProject(0, 0)};
         }
     }
 }

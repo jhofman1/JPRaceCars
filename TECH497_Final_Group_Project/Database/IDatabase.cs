@@ -20,14 +20,15 @@ namespace TECH497_Final_Group_Project.Database
     }
     public class Project
     {
+        public 
         public ImageDefinition MainImage { get; set; }
         public string Title { get; set; }
         public string Description { get;set; }
-        public IEnumerable<ImageDefinition> images { get; set; }
+        public IEnumerable<ImageDefinition> Images { get; set; }
     }
     public interface IDatabase
     {
-        Project GetImagesForProjects(Catagory catagory, int ID);
+        Project GetProject(Catagory catagory, int ID);
         IEnumerable<Project> GetProjectsForCatagory(Catagory catagory);
         
     }
