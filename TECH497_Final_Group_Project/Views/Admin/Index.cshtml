@@ -1,0 +1,57 @@
+﻿@model Dictionary< TECH497_Final_Group_Project.Database.Catagory,IEnumerable<TECH497_Final_Group_Project.Database.Project>>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>Index</h2>
+@{ 
+    foreach (var category in Model)
+    {
+        <h3>
+            @category.Key.ToString()
+        </h3>
+        <table border="1">
+            <thead>
+               <tr>
+                   <th>
+                       Title
+                   </th>
+                   <th>
+                       Description
+                   </th>
+                   <th>
+                       Edit
+                   </th>
+                   <th>
+                       Edit Images
+                   </th>
+               </tr>
+            </thead>
+            <tbody>
+                @{
+                    foreach (var project in category.Value) {
+                        <tr>
+                            <td>
+                                @project.Title
+                            </td>
+                            <td>
+                                @project.Description
+                            </td>
+                            <td>
+                                <a href="~/Admin/editproject/@project.Id">edit</a>
+                            </td>
+                            <td>
+                                <a href="~/Admin/editimages/@project.Id">images</a>
+                            </td>
+                        </tr>
+                    }
+                }
+            </tbody>
+        </table>
+    }
+}
+<a href="~/Admin/newproject">
+    New Project
+</a>

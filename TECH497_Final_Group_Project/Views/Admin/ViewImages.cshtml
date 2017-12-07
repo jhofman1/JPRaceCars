@@ -1,0 +1,36 @@
+﻿@using TECH497_Final_Group_Project.Database
+@model TECH497_Final_Group_Project.Database.Project
+
+@{
+    ViewBag.Title = "ViewImages";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>ViewImages</h2>
+@{
+    IEnumerable<ImageDefinition> images = Model.MainImage != null ? (new ImageDefinition[] { Model.MainImage }).Concat(Model.Images) : Model.Images;
+    bool firstFlag = Model.MainImage != null;
+}
+@{
+    <h1>Project: @Model.Title</h1>
+    <a href="/Admin/addimage/@Model.Id">Add an image</a>
+    foreach (var image in images)
+    {
+        using (Html.BeginForm("imagemod", "Admin"))
+        {
+            if (firstFlag)
+            {
+                <h3>Title Image</h3>
+                <br />
+            }
+            <p> Alt text: @image.AltText</p>
+            <img src="@image.URL" />
+            <br/>
+            <input type="hidden" name="hiddenId" value="@image.Id" />
+            <input type="submit" name="action" value="delete" />
+            <input type="submit" name="action" value="edit" />
+            <input type="submit" name="action" value="makedefault" />
+        }
+    }
+}
+

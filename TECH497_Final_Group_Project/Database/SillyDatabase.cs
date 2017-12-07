@@ -1,13 +1,23 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Web;
-
 namespace TECH497_Final_Group_Project.Database
 {
     public class SillyDatabase : IDatabase
     {
-        public Project GetProject(Catagory catagory, int ID)
+        public void AddImage(HttpPostedFileBase file, int projectId, string altText, bool isMain)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void AddProject(Catagory catagory, string Title, string Description)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Project GetProject( int ID)
         {
             return new Project {
                 Description = "This is a simple project you know basic stuff",
@@ -29,7 +39,7 @@ namespace TECH497_Final_Group_Project.Database
 
         public IEnumerable<Project> GetProjectsForCatagory(Catagory catagory)
         {
-            return new List<Project>{GetProject(0, 0)};
+            return new List<Project>{GetProject( 0)};
         }
     }
 }

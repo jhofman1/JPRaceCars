@@ -1,0 +1,20 @@
+﻿@using TECH497_Final_Group_Project.Database
+@model TECH497_Final_Group_Project.Database.Project
+
+@{
+    ViewBag.Title = "EditProject";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+@using (Html.BeginForm("editproject", "Admin")) { 
+    <input type="hidden" name="hiddenId" value="@ViewBag.hiddenId" />
+<h2>EditProject</h2>
+@(Html.DropDownListFor(x => x.Category,
+    Enum.GetValues(typeof(Catagory))
+    .Cast<Catagory>()
+    .Select(x => new SelectListItem { Text = x.ToString(), Value = x.ToString() })))
+<lable>Title</lable>
+@(Html.TextBoxFor(x => x.Title))
+<label>Description</label>
+@(Html.TextAreaFor(x=>x.Description))
+    <input type="submit" />
+}
