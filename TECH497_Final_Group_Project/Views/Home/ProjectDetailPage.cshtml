@@ -1,0 +1,47 @@
+﻿@model TECH497_Final_Group_Project.Models.ProjectModel
+
+@{
+    ViewBag.Title = "DragRacing";
+}
+
+@if (Model.project != null)
+{
+    <div class="section-image-container page-top-spacing-projects">
+        <h2 class="home-page-main-header">@Model.project.Title</h2>
+        <img class="proj-detail-main-image" src="@Url.Content("~/Content/Images/" + Model.project.MainImage.URL)" />
+    </div>
+    <div class="body-content photo-gallery-container">
+        @if (Model.project.Images.Count() > 0)
+        {
+            <ul style="list-style:none; padding:0;" class="row row-centered">
+
+                @foreach (var image in Model.project.Images)
+                {
+                    <li class="fb-list-item-container">
+                        <div class="fb-project-container">
+                            <a class="fancybox" rel="gallery1" title="@image.AltText"
+                               href="@Url.Content("~/Content/Images/" + image.URL)">
+                                <img class="fb-project-img" alt="@image.AltText" src="@Url.Content("~/Content/Images/" + image.URL)" />
+                            </a>
+                        </div>
+                    </li>
+                }
+            </ul>
+        }
+    </div>
+}
+
+@section Scripts {
+    @Styles.Render("~/Content/css")
+    @Styles.Render("~/Content/css/fancybox")
+    @Scripts.Render("~/bundles/fancybox")
+
+    <script>
+        $(document).ready(function () {
+            $(".fancybox").fancybox({
+                openEffect: 'none',
+                closeEffect: 'none'
+            });
+        });
+    </script>
+}

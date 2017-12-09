@@ -26,6 +26,16 @@ namespace TECH497_Final_Group_Project
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/site.css"));
+
+            bundles.Add(new ScriptBundle("~/bundles/fancybox").Include(
+                    "~/Scripts/jquery.mousewheel-3.0.6.pack.js",
+                    "~/Scripts/jquery.fancybox.js",
+                    "~/Scripts/jquery.fancybox.pack.js"
+                ));
+
+            bundles.Add(new StyleBundle("~/Content/css/fancybox").Include(
+                      "~/Content/jquery.fancybox.css",
+                      "~/Content/site.css"));
         }
     }
 }

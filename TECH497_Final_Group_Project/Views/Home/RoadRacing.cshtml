@@ -1,0 +1,33 @@
+﻿@using TECH497_Final_Group_Project.Database
+@model TECH497_Final_Group_Project.Models.ProjectsListModel
+
+@{
+    ViewBag.Title = "Road Racing";
+}
+
+<div class="section-image-container page-top-spacing-projects">
+    <img class="section-image" src="~/Content/Images/road_racing_banner_version3.jpg" />
+</div>
+
+<div class="body-content photo-gallery-container">
+    @if (Model.projectsList.Count() > 0)
+    {
+        <ul style="list-style:none; padding:0;" class="row row-centered">
+            @foreach (var project in Model.projectsList)
+            {
+                <li class="fb-list-item-container">
+                    <div class="fb-project-container">
+                        <img class="fb-project-img" alt="@project.MainImage.AltText" src="@Url.Content("~/Content/Images/" + project.MainImage.URL)" />
+                        <h4 class="home-recent-project-title">@project.MainImage.AltText</h4>
+                        <p class="home-recent-project-subtitle">@project.MainImage.Desc</p>
+                        @Html.ActionLink("View Project", "ProjectDetailPage", new { projectId = project.Id }, new { @class = "view-project-btn" })
+                    </div>
+                </li>
+            }
+        </ul>
+    }
+</div>
+
+@section Scripts {
+    @Styles.Render("~/Content/css")
+}

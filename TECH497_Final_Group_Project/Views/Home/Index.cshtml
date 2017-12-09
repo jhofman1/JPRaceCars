@@ -2,7 +2,7 @@
     ViewBag.Title = "Home";
 }
 
-<div class="banner">
+<div class="page-top-spacing">
     <img id="banner-image" src="~/Content/Images/hero_banner4.jpg" />
 </div>
 <div class="container body-content top-spacing section-spacing">
@@ -22,19 +22,22 @@
         <h3 class="home-page-main-sub-header">This is a short description for our recent projects.</h3>
         <div class="row row-centered">
             <div class="recent-project-container">
-                <img src="~/Content/Images/2-huffman001.jpg" class="home-recent-project-img">
+                <img src="~/Content/Images/proj-1963-Tempest/main.jpg" class="home-recent-project-img">
                 <h4 class="home-recent-project-title">Car Make and Model</h4>
                 <p class="home-recent-project-subtitle">Small subtitle for car</p>
+                @Html.ActionLink("View Project", "ProjectDetailPage", new { projectId = 1 }, new { @class = "view-project-btn" })
             </div>
             <div class="recent-project-container">
                 <img src="~/Content/Images/shop_pictures_026.jpg" class="home-recent-project-img">
                 <h4 class="home-recent-project-title">Car Make and Model</h4>
                 <p class="home-recent-project-subtitle">Small subtitle for car</p>
+                @Html.ActionLink("View Project", "ProjectDetailPage", new { projectId = 2 }, new { @class = "view-project-btn" })
             </div>
             <div class="recent-project-container-end">
                 <img src="~/Content/Images/MVC-023S.jpg" class="home-recent-project-img">
                 <h4 class="home-recent-project-title">Car Make and Model</h4>
                 <p class="home-recent-project-subtitle">Small subtitle for car</p>
+                @Html.ActionLink("View Project", "ProjectDetailPage", new { projectId = 3 }, new { @class = "view-project-btn" })
             </div>
         </div>
     </div>

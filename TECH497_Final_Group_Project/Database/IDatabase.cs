@@ -18,6 +18,7 @@ namespace TECH497_Final_Group_Project.Database
         public int Id { get; set; }
         public string AltText { get; set; }
         public string URL { get; set; }
+        public string Desc { get; set; }
     }
     public class Project
     {

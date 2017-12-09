@@ -154,6 +154,8 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\ProjectModel.cs" />
+    <Compile Include="Models\ProjectsListModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -161,7 +163,13 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-    <Content Include="Content\Images\2-huffman001.jpg" />
+    <Content Include="Content\fancybox\blank.gif" />
+    <Content Include="Content\fancybox\fancybox_buttons.png" />
+    <Content Include="Content\fancybox\fancybox_loading%402x.gif" />
+    <Content Include="Content\fancybox\fancybox_loading.gif" />
+    <Content Include="Content\fancybox\fancybox_overlay.png" />
+    <Content Include="Content\fancybox\fancybox_sprite%402x.png" />
+    <Content Include="Content\fancybox\fancybox_sprite.png" />
     <Content Include="Content\Images\drag_racing_banner_version2.jpg" />
     <Content Include="Content\Images\drag_racing_banner_version3.jpg" />
     <Content Include="Content\Images\drag_racing_car2.jpg" />
@@ -172,11 +180,36 @@
     <Content Include="Content\Images\leftside.jpg" />
     <Content Include="Content\Images\MVC-023S.jpg" />
     <Content Include="Content\Images\new_logo.jpg" />
+    <Content Include="Content\Images\proj-1963-Tempest\img1.jpg" />
+    <Content Include="Content\Images\proj-1963-Tempest\img10.jpg" />
+    <Content Include="Content\Images\proj-1963-Tempest\img11.jpg" />
+    <Content Include="Content\Images\proj-1963-Tempest\img12.jpg" />
+    <Content Include="Content\Images\proj-1963-Tempest\img13.jpg" />
+    <Content Include="Content\Images\proj-1963-Tempest\img14.jpg" />
+    <Content Include="Content\Images\proj-1963-Tempest\img15.jpg" />
+    <Content Include="Content\Images\proj-1963-Tempest\img16.jpg" />
+    <Content Include="Content\Images\proj-1963-Tempest\img17.jpg" />
+    <Content Include="Content\Images\proj-1963-Tempest\img18.jpg" />
+    <Content Include="Content\Images\proj-1963-Tempest\img19.jpg" />
+    <Content Include="Content\Images\proj-1963-Tempest\img2.jpg" />
+    <Content Include="Content\Images\proj-1963-Tempest\img20.jpg" />
+    <Content Include="Content\Images\proj-1963-Tempest\img21.jpg" />
+    <Content Include="Content\Images\proj-1963-Tempest\img3.jpg" />
+    <Content Include="Content\Images\proj-1963-Tempest\img4.jpg" />
+    <Content Include="Content\Images\proj-1963-Tempest\img5.jpg" />
+    <Content Include="Content\Images\proj-1963-Tempest\img6.jpg" />
+    <Content Include="Content\Images\proj-1963-Tempest\img7.jpg" />
+    <Content Include="Content\Images\proj-1963-Tempest\img8.jpg" />
+    <Content Include="Content\Images\proj-1963-Tempest\img9.jpg" />
+    <Content Include="Content\Images\proj-1963-Tempest\main.jpg" />
     <Content Include="Content\Images\road_racing_banner_version2.jpg" />
     <Content Include="Content\Images\road_racing_banner_version3.jpg" />
     <Content Include="Content\Images\shop_pictures_026.jpg" />
     <Content Include="Content\Images\street_car.jpg" />
     <Content Include="Content\Images\street_rods_banner2.jpg" />
+    <Content Include="Content\jquery.fancybox-buttons.css" />
+    <Content Include="Content\jquery.fancybox-thumbs.css" />
+    <Content Include="Content\jquery.fancybox.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -199,6 +232,12 @@
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.fancybox-buttons.js" />
+    <Content Include="Scripts\jquery.fancybox-media.js" />
+    <Content Include="Scripts\jquery.fancybox-thumbs.js" />
+    <Content Include="Scripts\jquery.fancybox.js" />
+    <Content Include="Scripts\jquery.fancybox.pack.js" />
+    <Content Include="Scripts\jquery.mousewheel-3.0.6.pack.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
@@ -225,11 +264,15 @@
     <Content Include="Views\Admin\EditProject.cshtml" />
     <Content Include="Views\Admin\ViewImages.cshtml" />
     <Content Include="Views\Admin\AddImage.cshtml" />
+    <Content Include="Views\Home\DragRacing.cshtml" />
+    <Content Include="Views\Home\TermsOfService.cshtml" />
+    <Content Include="Views\Home\ProjectDetailPage.cshtml" />
+    <Content Include="Views\Home\RoadRacing.cshtml" />
+    <Content Include="Views\Home\StreetRods.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Images\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
