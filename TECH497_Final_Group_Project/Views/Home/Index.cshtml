@@ -46,7 +46,7 @@
     <div class="container body-content">
         <h3 class="about-title">About Us</h3>
         <p class="about-txt">JP Race Cars, Inc. has been manufacturing top quality race cars and components since opening its doors in 1995. President Jerome Plunkett has been involved with drag racing since 1986 and continues to build race cars with total perfection one at a time.</p>
-        <button class="about-btn">Learn More</button>
+        <button class="about-btn" onclick="location.href='@Url.Action("About", "Home")'">Learn More</button>
     </div>
 </div>
 <div class="container body-content top-spacing">
@@ -54,9 +54,9 @@
     <h3 class="home-page-main-sub-header">Click one of the banners below to view the cars for that section.</h3>
 </div>
 <div class="section-image-container section-spacing">
-    <img class="section-image" src="~/Content/Images/street_rods_banner2.jpg"/>
-    <img class="section-image" src="~/Content/Images/drag_racing_banner_version3.jpg" />
-    <img class="section-image" src="~/Content/Images/road_racing_banner_version3.jpg" />
+    <img class="section-image" onclick="location.href='@Url.Action("StreetRods", "Home")'" src="~/Content/Images/street_rods_banner2.jpg"/>
+    <img class="section-image" onclick="location.href='@Url.Action("DragRacing", "Home")'" src="~/Content/Images/drag_racing_banner_version3.jpg" />
+    <img class="section-image" onclick="location.href='@Url.Action("RoadRacing", "Home")'" src="~/Content/Images/road_racing_banner_version3.jpg" />
 </div>
 
 @section Scripts {
