@@ -170,6 +170,15 @@
     <Content Include="Content\fancybox\fancybox_overlay.png" />
     <Content Include="Content\fancybox\fancybox_sprite%402x.png" />
     <Content Include="Content\fancybox\fancybox_sprite.png" />
+    <Content Include="Content\favicons\android-chrome-192x192.png" />
+    <Content Include="Content\favicons\android-chrome-512x512.png" />
+    <Content Include="Content\favicons\apple-touch-icon.png" />
+    <Content Include="Content\favicons\browserconfig.xml" />
+    <Content Include="Content\favicons\favicon-16x16.png" />
+    <Content Include="Content\favicons\favicon-32x32.png" />
+    <Content Include="Content\favicons\favicon.ico" />
+    <Content Include="Content\favicons\mstile-150x150.png" />
+    <Content Include="Content\favicons\safari-pinned-tab.svg" />
     <Content Include="Content\Images\drag_racing_banner_version2.jpg" />
     <Content Include="Content\Images\drag_racing_banner_version3.jpg" />
     <Content Include="Content\Images\drag_racing_car2.jpg" />
@@ -226,6 +235,7 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <Compile Include="Database\IDatabase.cs" />
+    <Content Include="Content\favicons\manifest.json" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
