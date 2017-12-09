@@ -47,6 +47,9 @@ namespace TECH497_Final_Group_Project.Controllers
             if(id == "new")
             {
                 db.AddProject(p.Category, p.Title, p.Description);
+            } else
+            {
+
             }
             return Redirect("~/Admin/Index");
         }
@@ -69,6 +72,22 @@ namespace TECH497_Final_Group_Project.Controllers
             var description = Request["text"];
             DatabaseFactory.GetDatabase().AddImage(file, id, description, false);
             return Redirect("~/Admin/editimages/" + id);
+        }
+        public ActionResult imagemod()
+        {
+            var database = DatabaseFactory.GetDatabase();
+            int id = int.Parse(Request["hiddenId"]);
+            int projId = int.Parse(Request["projeid"]);
+            string action = Request["action"];
+            if(action == "delete")
+            {
+                database.DeleteImage(id);
+            }
+            else
+            {
+                database.SetImageToTitle(id);
+            }
+            return Redirect("~/Admin/editimages/" + projId);
         }
     }
 }

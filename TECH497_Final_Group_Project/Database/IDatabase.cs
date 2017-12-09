@@ -35,6 +35,8 @@ namespace TECH497_Final_Group_Project.Database
         IEnumerable<Project> GetProjectsForCatagory(Catagory catagory);
         void AddProject(Catagory catagory, string Title, string Description);
         void AddImage(HttpPostedFileBase file, int projectId, string altText, bool isMain);
-        
+        void SetImageToTitle(int imageID);
+        void DeleteImage(int imageID);
+        void EditProject(Project project);
     }
 }

@@ -17,6 +17,16 @@ namespace TECH497_Final_Group_Project.Database
             throw new NotImplementedException();
         }
 
+        public void DeleteImage(int imageID)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void EditProject(Project project)
+        {
+            throw new NotImplementedException();
+        }
+
         public Project GetProject( int ID)
         {
             return new Project {
@@ -164,6 +174,11 @@ namespace TECH497_Final_Group_Project.Database
         public IEnumerable<Project> GetProjectsForCatagory(Catagory catagory)
         {
             return new List<Project>{GetProject(0), GetProject(0), GetProject(0), GetProject(0), GetProject(0), GetProject(0) };
+        }
+
+        public void SetImageToTitle(int imageID)
+        {
+            throw new NotImplementedException();
         }
     }
 }

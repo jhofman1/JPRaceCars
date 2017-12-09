@@ -20,15 +20,16 @@
         {
             if (firstFlag)
             {
+                firstFlag = false;
                 <h3>Title Image</h3>
                 <br />
             }
             <p> Alt text: @image.AltText</p>
             <img src="@image.URL" />
             <br/>
+            <input type="hidden" name="projeid" value="@Model.Id" />
             <input type="hidden" name="hiddenId" value="@image.Id" />
             <input type="submit" name="action" value="delete" />
-            <input type="submit" name="action" value="edit" />
             <input type="submit" name="action" value="makedefault" />
         }
     }
