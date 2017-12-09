@@ -86,14 +86,19 @@ namespace TECH497_Final_Group_Project.Database
 
         public void AddImage(HttpPostedFileBase file, int projectId, string altText, bool isMain)
         {
-            string path = Path.Combine("/Images/", Guid.NewGuid().ToString() + Path.GetExtension(file.FileName));
+            if (!Directory.Exists(HostingEnvironment.ApplicationPhysicalPath + "/Content/Images"))
+            {
+                Directory.CreateDirectory(HostingEnvironment.ApplicationPhysicalPath + "/Content/Images");
+            }
+            string basic = Guid.NewGuid().ToString() + Path.GetExtension(file.FileName);
+            string path = Path.Combine("/Content/Images/", basic);
             file.SaveAs(HostingEnvironment.ApplicationPhysicalPath + path);
             _images.Insert(new DBImage
             {
                 IsTitle = isMain,
                 AltText = altText,
                 ProjectId = projectId,
-                Url = path
+                Url = basic
             });
         }
 

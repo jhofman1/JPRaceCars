@@ -12,7 +12,7 @@ namespace TECH497_Final_Group_Project.Controllers
     public class HomeController : Controller
     {
 
-        SillyDatabase database = new SillyDatabase();
+        IDatabase database = DatabaseFactory.GetDatabase();
 
         public ActionResult Index()
         {
