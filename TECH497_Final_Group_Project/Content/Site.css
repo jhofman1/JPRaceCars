@@ -183,8 +183,13 @@ a.top-bar-text:hover {
     font-weight: 600;
 }
 
-.banner {
+.page-top-spacing {
     margin-top: 75px;
+}
+
+.page-top-spacing-projects {
+    font-family: Montserrat, sans-serif;
+    margin-top: 100px;
 }
 
 #banner-image {
@@ -203,6 +208,12 @@ a.top-bar-text:hover {
 .grey-background {
     background-color: #E9EEF2;
     padding-top: 20px;
+}
+
+.photo-gallery-container {
+    background-color: #E9EEF2;
+    padding: 40px 0px 10px;
+    margin-top: 20px;
 }
 
 .services-list {
@@ -249,37 +260,42 @@ i.fa.fa-cog {
     height: 185px;
 }
 
-.recent-project-container:hover, .recent-project-container-end:hover {
-    -moz-transition: all .25s ease-in-out;
-    -o-transition: all .25s ease-in-out;
-    -webkit-transition: all .25s ease-in-out;
-    transition: all .25s ease-in-out;
-    background: #fff;
-    opacity: .4;
+.fb-project-img {
+    width: 275px;
+    object-fit: cover;
+    height: 185px;
 }
 
 .view-project-btn {
     font-family: 'Montserrat', sans-serif;
-    display: none;
-    background-color: #fff;
+    background-color: #1d272b;
     border: none;
-    color: black;
-    position: absolute;
-    font-size: 18px;
-    width: 175px;
-    font-weight: bold;
-    padding: 10px 0;
-    left: 0;
-    margin-left: auto;
-    margin-right: auto;
-    right: 0;
+    color: #ffffff;
+    width: 100%;
+    padding: 15px 0px;
+    display: block;
 }
 
+.view-project-btn:hover {
+    background-color: #3d4b50;
+    color: #fff;
+    text-decoration: none;
+}
+    
 .home-page-main-header {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     font-size: 30px;
     margin-top: 40px;
+    text-align: center;
+}
+
+.terms-page-main-header {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
     text-align: center;
 }
 
@@ -306,7 +322,7 @@ i.fa.fa-cog {
     font-family: 'Montserrat', sans-serif;
     color: #9b9b9b;
     font-size: 14px;
-    padding-bottom: 30px;
+    padding-bottom: 10px;
 }
 
 .about-container {
@@ -314,6 +330,42 @@ i.fa.fa-cog {
     padding: 80px 20px;
     text-align: center;
 }
+.about-header { 
+    padding-left: 40px; 
+    padding-right: 40px; 
+    padding-top: 40px; 
+} 
+ 
+.about-header blockquote { 
+    text-indent: 35px; 
+} 
+ 
+.about-testimonial-header { 
+    border-top: solid 1px black; 
+    border-bottom: solid 1px black; 
+    text-align: center; 
+    padding: 10px 0; 
+} 
+ 
+.about-testimonial img { 
+    float: left; 
+    margin-right: 40px; 
+} 
+ 
+.about-testimonial { 
+} 
+ 
+.about-testimonial-container div:nth-of-type(even) * { 
+    padding-left: 20%; 
+} 
+ 
+.about-testimonial-container div:nth-of-type(odd) * { 
+    margin-right: 10%; 
+} 
+ 
+.about-testimonial-container blockquote { 
+    text-indent: 35px; 
+} 
 
 .about-title {
     color: #fff;
@@ -389,43 +441,6 @@ i.fa.fa-cog {
     margin: 15px auto 30px;
 }
 
-.about-header {
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-top: 40px;
-}
-
-.about-header blockquote {
-    text-indent: 35px;
-}
-
-.about-testimonial-header {
-    border-top: solid 1px black;
-    border-bottom: solid 1px black;
-    text-align: center;
-    padding: 10px 0;
-}
-
-.about-testimonial img {
-    float: left;
-    margin-right: 40px;
-}
-
-.about-testimonial {
-}
-
-.about-testimonial-container div:nth-of-type(even) * {
-    padding-left: 20%;
-}
-
-.about-testimonial-container div:nth-of-type(odd) * {
-    margin-right: 10%;
-}
-
-.about-testimonial-container blockquote {
-    text-indent: 35px;
-}
-
 .section-container-one {
     width: 24%;
     font-family: 'Montserrat', sans-serif;
@@ -481,16 +496,17 @@ i.fa.fa-cog {
     width: 90%;
 }
 
+.proj-detail-main-image {
+    width: 40%;
+    margin-top: 20px;
+}
+
 .section-image-container {
     text-align: center;
 }
 
 .section-spacing {
     padding-bottom: 60px;
-}
-
-.section-top-spacing {
-    padding-top: 60px;
 }
 
 footer {
@@ -539,6 +555,21 @@ footer {
     background-color: #e9eef2;
 }
 
+.fb-list-item-container {
+    display: inline-block;
+}
+
+.fb-project-container {
+    background: #fff;
+    padding: 12px 12px;
+    text-align: center;
+    margin: 0px 8px 30px 8px;
+}
+
+a.fancybox {
+    text-decoration: none;
+}
+
 @media (max-width: 450px) {
     .services-list {
         padding: 0 5px;
@@ -550,8 +581,12 @@ footer {
         display: none;
     }
 
-    .banner {
+    .page-top-spacing {
         margin-top: 31px;
+    }
+
+    .page-top-spacing-projects {
+        margin-top: 60px;
     }
 
     .recent-project-container, .recent-project-container-end {
@@ -560,6 +595,11 @@ footer {
     }
 
     .home-recent-project-img {
+        height: auto !important;
+        width: 100% !important;
+    }
+
+    .fb-project-img {
         height: auto !important;
         width: 100% !important;
     }
@@ -642,10 +682,16 @@ footer {
         height: 160px;
     }
 
+    .fb-project-img {
+        object-fit: cover;
+        height: 160px;
+    }
+
     .recent-project-container {
         margin-right: 10px;
     }
 
+    
     #banner-image {
         content: url("Images/hero_banner_tall.jpg");
     }
@@ -667,7 +713,7 @@ footer {
     .navbar-nav > li a {
         color: #000000 !important;
         background: #fff;
-        padding: 33px 5px 27px !important;
+        padding: 33px 20px 27px !important;
         border-bottom: none !important;
     }
 
@@ -697,10 +743,16 @@ footer {
 
 @media (min-width: 1200px) {
     .navbar-nav > li a {
-        padding: 33px 14px 27px !important;
+        /*padding: 33px 14px 27px !important;*/
+        padding: 33px 20px 27px !important;
     }
 
     .home-recent-project-img {
+        width: 323px;
+        height: 225px;
+    }
+
+    .fb-project-img {
         width: 323px;
         height: 225px;
     }
