@@ -441,6 +441,25 @@ i.fa.fa-cog {
     margin: 15px auto 30px;
 }
 
+.contact-map {
+    width: 40%;
+    margin: 0 auto;
+}
+
+.contact-shop img {
+    float: right;
+}
+
+.contact-container {
+    padding-left: 50px;
+}
+
+.contact-hours ul {
+    list-style: none;
+    float: left;
+    margin: 0 5px;
+}
+
 .section-container-one {
     width: 24%;
     font-family: 'Montserrat', sans-serif;
@@ -507,6 +526,10 @@ i.fa.fa-cog {
 
 .section-spacing {
     padding-bottom: 60px;
+}
+
+.section-top-spacing {
+    padding-top: 60px;
 }
 
 footer {
