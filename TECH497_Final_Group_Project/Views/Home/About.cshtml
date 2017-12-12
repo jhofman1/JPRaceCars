@@ -1,31 +1,40 @@
 ﻿@{
-    ViewBag.Title = "About";
+    ViewBag.Title = "About Us";
 }
 
-<h2>@ViewBag.Title</h2>
 
-<div class="grey-background">
+<!--
+<div class="row grey-background section-top-spacing">
+    <h2 class="text-center">@ViewBag.Title</h2>
+</div>
+
+<div class="row grey-background">
     <div class="container body-content">
         <div class="about-header">
-            <div style="float:left;  margin-right: 40px; margin-top: 40px; padding-left: 20px;">
-                <img style="border: solid 1px;" src="~/Content/Images/jerome_plunkett.jpg" />
-            </div>
-            <div>
-                <h2>JP Race Cars, Inc</h2>
-                <blockquote>
-                    JP Race Cars, Inc. has been manufacturing top quality race cars and components since opening its doors in 1995.
-                    President Jerome Plunkett has been involved with drag racing since 1986 and continues to build race cars with total perfection one at a time.
-                </blockquote>
-            </div>
+            <h3 class="text-center">JP Race Cars, Inc.</h3>
+            <blockquote>
+                JP Race Cars, Inc. has been manufacturing top quality race cars and components since opening its doors in 1995.
+                President Jerome Plunkett has been involved with drag racing since 1986 and continues to build race cars with total perfection one at a time.
+            </blockquote>
         </div>
     </div>
 </div>
-<div class="grey-background">
+
+-->
+
+<div class="about-container">
+    <div class="container body-content section-top-spacing">
+        <h2 class="about-title">@ViewBag.Title</h2>
+        <p class="about-txt">JP Race Cars, Inc. has been manufacturing top quality race cars and components since opening its doors in 1995. President Jerome Plunkett has been involved with drag racing since 1986 and continues to build race cars with total perfection one at a time.</p>
+    </div>
+</div>
+
+<div class="row grey-background">
     <div class="container body-content section-spacing about-testimonial-container">
         <h2 class="about-testimonial-header">Testimonials</h2>
         <div class="about-testimonial section-top-spacing">
-            <img src="https://dummyimage.com/200x200/" />
-            <h2>Project Title - Client Name</h2>
+            <img class="img-responsive" src="~/Content/Images/testimonial_placeholder.jpg" alt="Project Title - Client Name" />
+            <h3>Project Title - Client Name</h3>
             <blockquote>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -35,8 +44,8 @@
         </div>
         <br style="clear:both;" />
         <div class="about-testimonial section-top-spacing">
-            <img src="https://dummyimage.com/200x200/" />
-            <h2>Project Title - Client Name</h2>
+            <img class="img-responsive" src="~/Content/Images/testimonial_placeholder.jpg" alt="Project Title - Client Name" />
+            <h3>Project Title - Client Name</h3>
             <blockquote>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -46,8 +55,8 @@
         </div>
         <br style="clear:both;" />
         <div class="about-testimonial section-top-spacing">
-            <img src="https://dummyimage.com/200x200/" />
-            <h2>Project Title - Client Name</h2>
+            <img class="img-responsive" src="~/Content/Images/testimonial_placeholder.jpg" alt="Project Title - Client Name" />
+            <h3>Project Title - Client Name</h3>
             <blockquote>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.

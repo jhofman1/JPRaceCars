@@ -217,6 +217,7 @@
     <Content Include="Content\Images\shop_pictures_026.jpg" />
     <Content Include="Content\Images\street_car.jpg" />
     <Content Include="Content\Images\street_rods_banner2.jpg" />
+    <Content Include="Content\Images\testimonial_placeholder.jpg" />
     <Content Include="Content\jquery.fancybox-buttons.css" />
     <Content Include="Content\jquery.fancybox-thumbs.css" />
     <Content Include="Content\jquery.fancybox.css" />
