@@ -18,7 +18,7 @@
                 <li class="fb-list-item-container">
                     <div class="fb-project-container">
                         <img class="fb-project-img" alt="@project.MainImage.AltText" src="@Url.Content("~/Content/Images/" + project.MainImage.URL)" />
-                        <h4 class="home-recent-project-title">@project.MainImage.AltText</h4>
+                        <h4 class="home-recent-project-title">@project.Title</h4>
                         <p class="home-recent-project-subtitle">@project.MainImage.Desc</p>
                         @Html.ActionLink("View Project", "ProjectDetailPage", new { projectId = project.Id }, new { @class = "view-project-btn" })
                     </div>
