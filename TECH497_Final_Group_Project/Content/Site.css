@@ -623,6 +623,18 @@ a.fancybox {
         width: 100% !important;
     }
 
+    .proj-detail-main-image {
+        width: 90%;
+    }
+
+    .photo-gallery-container {
+        padding: 10px 15px 0px;
+    }
+
+    .fb-list-item-container {
+        display: block;
+    }
+    
     .fb-project-img {
         height: auto !important;
         width: 100% !important;
