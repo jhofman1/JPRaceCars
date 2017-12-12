@@ -441,23 +441,37 @@ i.fa.fa-cog {
     margin: 15px auto 30px;
 }
 
+#building-img {
+    vertical-align: top;
+    display: inline-block;
+}
+
 .contact-map {
-    width: 40%;
+    width: 100%;
     margin: 0 auto;
 }
 
-.contact-shop img {
-    float: right;
+.contact-info-container {
+    margin: 0 auto;
+    display: table;
 }
 
 .contact-container {
+    display: inline-block;
     padding-left: 50px;
 }
 
-.contact-hours ul {
-    list-style: none;
-    float: left;
-    margin: 0 5px;
+.contact-page-main-header {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    margin: 60px 0 40px;
+    text-align: center;
+}
+
+.embed-responsive-16by9 {
+    height: 300px;
+    padding: 0;
 }
 
 .section-container-one {
@@ -664,6 +678,10 @@ a.fancybox {
     footer {
         padding: 10px 0 30px 0;
     }
+
+    #building-img {
+        width: 100%;
+    }
 }
 
 @media (max-width: 1005px) {
@@ -726,10 +744,13 @@ a.fancybox {
     .recent-project-container {
         margin-right: 10px;
     }
-
     
     #banner-image {
         content: url("Images/hero_banner_tall.jpg");
+    }
+
+    #building-img {
+        display: block;
     }
 }
 
